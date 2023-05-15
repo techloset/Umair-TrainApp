@@ -27,7 +27,15 @@ const styles = StyleSheet.create({
     button: {
         backgroundColor: '#F9862A', width: 168, height: 45, borderRadius: 25, display: 'flex',
         justifyContent: 'center', alignContent: 'center', alignItems: 'center',
-        marginTop: 12
+        marginTop: 12,
+        shadowColor: "#F2994A",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.19,
+        shadowRadius: 5.62,
+        elevation: 6
 
     }
 })

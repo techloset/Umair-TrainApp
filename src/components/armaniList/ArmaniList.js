@@ -58,7 +58,8 @@ const ArmaniList = () => {
 const styles = StyleSheet.create({
     container: {
 
-        marginTop: StatusBar.currentHeight || 0,
+        // marginTop: StatusBar.currentHeight || 0,
+        marginTop: 10
     },
     item: {
         backgroundColor: '#FFFFFF',

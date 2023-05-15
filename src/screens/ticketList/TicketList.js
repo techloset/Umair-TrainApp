@@ -1,10 +1,11 @@
-import { Text, View, Image, TouchableOpacity, ScrollView, ImageBackground } from 'react-native'
+import { Text, View, Image, TouchableOpacity, ScrollView, ImageBackground, blurRadius } from 'react-native'
 import React from 'react'
 import { styles } from './TicketListStyle'
 import DateList from '../../components/dateList/DateList'
 import FairList from '../../components/fairList/FairList'
 import Button from '../../components/button/Button'
-import LinearGradient from 'react-native-linear-gradient'
+import { BlurView } from "@react-native-community/blur";
+
 
 
 
@@ -13,10 +14,7 @@ const TicketList = ({ navigation }) => {
     return (
         <>
             <View style={{ flex: 1, }}>
-                {/* <ScrollView style={{ backgroundColor: 'red', }}> */}
-
-
-                <View style={{ flex: 1 }}>
+                <View style={{ flex: 8 }}>
                     <ImageBackground source={require('../../assets/BackGround2nd.png')}>
 
                         <View style={styles.Hello}>
@@ -32,22 +30,20 @@ const TicketList = ({ navigation }) => {
                         <FairList />
                     </ImageBackground>
                 </View>
-
-
-
-
-
-
-                {/* </ScrollView> */}
-
-                <LinearGradient colors={['#FFFFFF80', '#FFFFFF00']} style={{ height: 97, backgroundColor: '#FFFFFF80', borderBottomRightRadius: 16, borderBottomLeftRadius: 16, opacity: 50 }}>
+                <BlurView blurType="light"
+                    blurAmount={10}
+                    style={{ flex: 1 }}
+                    overlayColor='transparent'
+                    reducedTransparencyFallbackColor="white" >
 
                     <Button />
-                </LinearGradient>
+
+                </BlurView>
             </View>
         </>
     )
 }
 
 export default TicketList
+
 

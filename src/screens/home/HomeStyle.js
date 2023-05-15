@@ -32,5 +32,15 @@ export const styles = StyleSheet.create({
         backgroundColor: 'white',
         marginHorizontal: 20
 
+    },
+    cari: {
+        shadowColor: "#F2994A",
+        shadowOffset: {
+            width: 0,
+            height: 13,
+        },
+        shadowOpacity: 0.24,
+        shadowRadius: 14.86,
+        elevation: 18
     }
 })

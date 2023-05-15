@@ -18,14 +18,14 @@ const Large = () => {
             title: 'Tetap jaga komunikasi selama di kereta',
 
             tips: <Calling text='Tips' color='#85D3FF' backgroundColor="#E0F3FF" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
-            hello: <Hello image={require('../../assets/contact.png')} width={100} height={100} />
+            hello: <Hello image={require('../../assets/Berita.png')} width={135} height={120} />
         },
 
         {
             id: '2',
             title: 'Protokol kesehatan di kereta',
             tips: <Calling text='Update' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
-            hello: <Hello image={require('../../assets/good.png')} width={107} height={110} />
+            hello: <Hello image={require('../../assets/good.png')} width={100} height={100} />
         },
 
     ];
@@ -83,7 +83,8 @@ const styles = StyleSheet.create({
         color: '#333E63',
         fontFamily: 'PlusJakartaSans-Bold',
         width: 114,
-        height: 72
+        height: 72,
+        lineHeight: 24
     },
     tips: {
         fontSize: 36

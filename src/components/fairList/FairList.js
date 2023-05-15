@@ -5,13 +5,14 @@ import {
     FlatList,
     StyleSheet,
     Text,
-    StatusBar,
+    ScrollView,
     image,
     Image
 } from 'react-native';
 import Calling from '../largeList/Calling';
 
 import Arrow from '../flatList/Arrow';
+import { color } from '@rneui/base';
 const FairList = () => {
 
     const DATA = [
@@ -33,7 +34,7 @@ const FairList = () => {
         {
             id: '2',
 
-            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - C' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
 
             title: 'Joglosemarkerto',
             fair: 'Rp74.000',
@@ -61,7 +62,7 @@ const FairList = () => {
         {
             id: '4',
 
-            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - B' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
 
             title: 'Bengawan',
             fair: 'Rp129.000',
@@ -75,7 +76,7 @@ const FairList = () => {
         {
             id: '5',
 
-            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - D' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
 
             title: 'Joglosemarkerto',
             fair: 'Rp149.000',
@@ -89,19 +90,24 @@ const FairList = () => {
         {
             id: '6',
 
-            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - D' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
 
             title: 'Joglosemarkerto',
             fair: 'Rp149.000',
             sisa: 'Sisa 2',
             jam: '6 jam 35 menit',
+            arrivalTime: '14.00',
+            departureTime: '18.35',
             // hello: <Hello image={require('../../assets/phone.png')} width={107} height={107} />
             arrow: <Arrow />
         },
+
     ];
 
     const Item = ({ title, tips, arrow, fair, sisa, jam, arrivalTime, departureTime }) => (
-        <View style={styles.item}>
+
+
+        <ScrollView style={styles.item}>
 
 
             <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, marginTop: 12, marginBottom: 18 }}>
@@ -112,8 +118,10 @@ const FairList = () => {
                             <Text>PWT</Text>
                             <Text>{arrivalTime}</Text>
                         </View>
-                        <View>
-                            <Image source={require('../../assets/ball.png')} style={{ width: 73, height: 6 }} />
+                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignContent: 'center' }}>
+                            <View style={{ width: 6, height: 6, borderRadius: 6, backgroundColor: '#FFFFFF00', borderWidth: 1, borderColor: '#E0E0E0' }}></View>
+                            <Text style={{ textAlign: 'center', justifyContent: 'center', marginBottom: 2, color: '#E0E0E0' }} > -  -  -  - </Text>
+                            <View style={{ width: 6, height: 6, borderRadius: 6, backgroundColor: '#2D9CDB', borderWidth: 1, borderColor: '#2F80ED' }}></View>
                         </View>
                         <View style={{ display: 'flex', gap: 4 }}>
                             <Text>SLO</Text>
@@ -138,7 +146,7 @@ const FairList = () => {
 
 
 
-        </View>
+        </ScrollView>
 
 
 

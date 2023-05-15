@@ -1,4 +1,4 @@
-import { Text, Image, View, Pressable, Button, FlatList, ScrollView, TouchableOpacity, ImageBackground } from 'react-native'
+import { Text, Image, View, Pressable, Button, FlatList, StatusBar, ScrollView, TouchableOpacity, ImageBackground } from 'react-native'
 import React from 'react'
 import CardItem from '../../components/cardItem/CardItem'
 import Counter from '../../components/counter/Counter'
@@ -65,7 +65,7 @@ const Home = ({ navigation }) => {
                                 <Counter />
                             </View>
                             <View>
-                                <TouchableOpacity style={{ backgroundColor: '#F8862A', width: 128, height: 40, borderRadius: 8, justifyContent: 'center' }} onPress={() => navigation.navigate('TicketList')}>
+                                <TouchableOpacity style={[{ backgroundColor: '#F8862A', width: 128, height: 40, borderRadius: 8, justifyContent: 'center' }, styles.cari]} onPress={() => navigation.navigate('TicketList')}>
                                     <Text style={{ fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', color: 'white', alignSelf: 'center', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', textAlignVertical: 'center', verticalAlign: 'auto', marginBottom: 4 }}>CARI TIKET</Text>
                                 </TouchableOpacity>
                             </View>

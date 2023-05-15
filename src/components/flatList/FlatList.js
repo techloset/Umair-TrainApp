@@ -12,6 +12,7 @@ import {
 
 import Besok from './Besok'
 import Arrow from './Arrow';
+
 const App = () => {
 
     const DATA = [
@@ -19,8 +20,9 @@ const App = () => {
             id: '1',
             title: 'Bengawan',
             name: 'PWT - LPY',
-            data: <Besok name='Besok' backgroundColor="#FA8C33" width={47} color="white" />,
-
+            data: <Besok name='Besok' shadowColor="#ed0f0f" style={[styles.Besok, { borderRadius: 8 }]}
+            />
+            ,
             arrow: <Arrow />
         },
 
@@ -28,7 +30,7 @@ const App = () => {
             id: '2',
             title: 'Bima',
             name: 'YK - PWT',
-            data: <Besok name='7 hari' backgroundColor="#E0F3FF" width={42} color='#85D3FF' />,
+            data: <Besok name='7 hari' style={styles.Hari} />,
 
             arrow: <Arrow />
 
@@ -37,7 +39,7 @@ const App = () => {
             id: '3',
             title: 'Joglosemarkerto',
             name: 'PK - LNW',
-            data: <Besok name='Bolan' backgroundColor="#FA8C33" width={47} color="white" />,
+            data: <Besok name='Bolan' style={styles.Hari} />,
 
             arrow: <Arrow />
         },
@@ -102,7 +104,36 @@ const styles = StyleSheet.create({
         color: '#88879C',
         fontSize: 10,
         fontFamily: 'PlusJakartaSans-Regular'
+    },
+    Besok: {
+        backgroundColor: '#FE9B4B',
+        width: 47,
+        height: 26,
+        textAlign: 'center',
+        color: "white",
+        paddingTop: 2,
+
+
+
+        shadowColor: "#FE9B4B",
+        shadowOffset: {
+            width: 0,
+            height: 13,
+        },
+        shadowOpacity: 0.24,
+        shadowRadius: 14.86,
+        elevation: 18
+    },
+    Hari: {
+        backgroundColor: "#E0F3FF", width: 42,
+        height: 26,
+        color: '#85D3FF',
+        borderRadius: 8,
+
+        textAlign: 'center',
+        paddingTop: 2,
     }
+
 });
 
 export default App;

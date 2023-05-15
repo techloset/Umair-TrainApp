@@ -62,12 +62,10 @@ const DateList = () => {
     const Item = ({ item, onPress, backgroundColor, textColor, selected }) => (
 
 
-        <TouchableOpacity onPress={() => handlePress(item.id)} style={[
-            styles.item, selected ? styles.hover : null,
-        ]}>
+        <TouchableOpacity onPress={() => handlePress(item.id)} style={[styles.item, selected ? styles.hover : null,]}>
             <LinearGradient colors={item.id == selectedId ? ['#85D3FF', '#2596D7'] : ['white', 'white']} style={styles.textShadow}>
-                <Text style={[styles.title, { color: textColor }]}>{item.title}</Text>
-                <Text style={[styles.name, { color: textColor }]}>{item.name}</Text>
+                <Text style={[styles.title, selected ? styles.title : styles.titleColor,]}>{item.title}</Text>
+                <Text style={[styles.name, selected ? styles.name : styles.titleColor]}>{item.name}</Text>
 
             </LinearGradient>
         </TouchableOpacity>
@@ -150,6 +148,9 @@ const styles = StyleSheet.create({
         borderRadius: 8,
 
     },
+    titleColor: {
+        color: 'black',
+    },
     title: {
         display: 'flex',
         paddingTop: 13,
@@ -157,6 +158,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
+        color: 'white',
 
         fontSize: 14,
         fontFamily: 'PlusJakartaSans-Bold',
@@ -166,6 +168,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
+        color: 'white',
         fontSize: 10,
         fontFamily: 'PlusJakartaSans-Bold',
         paddingBottom: 17

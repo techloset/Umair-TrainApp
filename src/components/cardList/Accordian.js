@@ -3,6 +3,7 @@ import {
     SafeAreaView,
     View,
     FlatList,
+    ScrollView,
     StyleSheet,
     Text,
     StatusBar,
@@ -14,33 +15,20 @@ const DATA = [
         id: 1,
 
     },
-    // {
-    //     id: 2,
-    //     title: 'Second Item',
-    //     textBody: 'bshbfjhdfhjdbvjfgflgfjkj gdfhjfgdhgdfjlgmf fgyugjdbhjb gfuyryghbdbvfdhgr ugf'
-    // },
-    // {
-    //     id: 3,
-    //     title: 'Third Item',
-    //     textBody: 'bshbfjhdfhjdbvjfgflgfjkj gdfhjfgdhgdfjlgmf fgyugjdbhjb gfuyryghbdbvfdhgr ugf'
-    // },
+
 ];
 
-// const Item = ({ title }) => (
-//     <View style={styles.item}>
-//         <Text style={styles.title}>{title}</Text>
-//     </View>
-// );
+
 
 const ArrowList = () => {
     return (
-        <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => <CustomDropDown title={item.title} textBody={item.textBody} />}
                 keyExtractor={(item) => item.id}
             />
-        </SafeAreaView>
+        </View>
     );
 };
 
