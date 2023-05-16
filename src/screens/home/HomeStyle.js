@@ -30,7 +30,16 @@ export const styles = StyleSheet.create({
 
         height: 229,
         backgroundColor: 'white',
-        marginHorizontal: 20
+        marginLeft: 8,
+
+        display: 'flex'
+        ,
+
+
+        width: '92%',
+
+        borderRadius: 8
+
 
     },
     cari: {

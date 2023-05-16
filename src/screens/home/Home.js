@@ -31,7 +31,7 @@ const Home = ({ navigation }) => {
                         </View>
                         <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, marginTop: 8 }}>
                             <Text style={{ color: '#59597C', fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }}>PWT</Text>
-                            <Image source={require('../../assets/arrow.png')} style={{ width: 18, height: 14, marginTop: 8 }} />
+                            <Image source={require('../../assets/mdi.png')} style={{ width: 18, height: 14, marginTop: 8 }} />
                             <Text style={{ color: '#59597C', fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }}>SLO</Text>
                         </View>
                         <View style={{ display: 'flex', flexDirection: 'row', marginHorizontal: 16, justifyContent: 'space-between', marginTop: 5 }}>

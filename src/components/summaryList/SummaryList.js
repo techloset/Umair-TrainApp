@@ -44,8 +44,10 @@ const SummaryList = () => {
                                 <Text>PWT</Text>
                                 <Text>14.00</Text>
                             </View>
-                            <View>
-                                <Image source={require('../../assets/ball.png')} style={{ width: 73, height: 6 }} />
+                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignContent: 'center' }}>
+                                <View style={{ width: 6, height: 6, borderRadius: 6, backgroundColor: '#FFFFFF00', borderWidth: 1, borderColor: '#E0E0E0' }}></View>
+                                <Text style={{ textAlign: 'center', justifyContent: 'center', marginBottom: 2, color: '#E0E0E0' }} > -  -  -  - </Text>
+                                <View style={{ width: 6, height: 6, borderRadius: 6, backgroundColor: '#2D9CDB', borderWidth: 1, borderColor: '#2F80ED' }}></View>
                             </View>
                             <View style={{ display: 'flex', gap: 4 }}>
                                 <Text>SLO</Text>

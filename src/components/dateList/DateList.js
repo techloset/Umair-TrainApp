@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     container: {
         marginTop: StatusBar.currentHeight || 0,
 
-        // flex: 1
+
 
     },
     item: {
@@ -117,18 +117,8 @@ const styles = StyleSheet.create({
         marginVertical: 8,
         marginHorizontal: 16,
         width: 56,
-        // flex: 1,
-        // height: 100,
-        borderRadius: 8,
-        // shadowColor: '#01D0DE',
-        // elevation: 20,
 
-        // shadowOffset: {
-        //     width: 20,
-        //     height: 40,
-        // },
-        // shadowOpacity: 1,
-        // shadowRadius: 30,
+        borderRadius: 8,
 
 
     },

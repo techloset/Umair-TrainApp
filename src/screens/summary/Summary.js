@@ -44,10 +44,10 @@ const Summary = ({ navigation }) => {
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 20, marginTop: 15, flex: 0.5 }}>
 
                     <TouchableOpacity>
-                        <Text style={{ color: '#88879C', fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', backgroundColor: 'white', paddingVertical: 18, borderRadius: 25, paddingHorizontal: 40 }}>PILIH KURSI</Text>
+                        <Text style={{ color: '#88879C', fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', backgroundColor: 'white', width: 168, height: 45, borderRadius: 25, textAlign: 'center', verticalAlign: 'middle' }}>PILIH KURSI</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('ChairSelection')}>
-                        <Text style={{ color: 'white', fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', backgroundColor: '#F8862A', paddingVertical: 18, borderRadius: 25, paddingHorizontal: 57 }}>LANJUT</Text>
+                        <Text style={{ color: 'white', fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', backgroundColor: '#F8862A', width: 168, height: 45, borderRadius: 25, textAlign: 'center', verticalAlign: 'middle' }}>LANJUT</Text>
                     </TouchableOpacity>
                 </View>
             </ImageBackground>
