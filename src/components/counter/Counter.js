@@ -17,7 +17,7 @@ const Counter = () => {
                     <Icon name='minus' size={15} color={'red'} style={{ color: countValue > 0 ? '#E0E0E0' : '#59597C' }} />
                 </View>
             </Pressable>
-            <Text>
+            <Text style={{ color: 'black' }}>
                 {countValue}
             </Text>
             <Pressable onPress={increment}>

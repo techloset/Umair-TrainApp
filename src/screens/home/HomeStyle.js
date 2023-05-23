@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
 
         width: 16,
         height: 14,
-        marginTop: 43,
+        marginTop: 55,
         marginLeft: 35,
 
 
@@ -29,7 +29,8 @@ export const styles = StyleSheet.create({
 
 
         height: 229,
-        backgroundColor: 'white',
+        backgroundColor: '#FAFCFE',
+
         marginLeft: 8,
 
         display: 'flex'

@@ -17,7 +17,7 @@ const TicketList = ({ navigation }) => {
                             <View style={styles.Hello}>
                                 <TouchableOpacity onPress={() => navigation.navigate('Home')}>
 
-                                    <Image source={require('../../assets/LeftArrow.png')} style={{ width: 16, height: 13, marginTop: 8 }} />
+                                    <Image source={require('../../assets/LeftArrow.png')} style={{ width: 16, height: 13, marginTop: 10 }} />
                                 </TouchableOpacity>
                                 <Text style={{ color: '#333E63', fontSize: 18, fontFamily: 'PlusJakartaSans-Bold', }}>Purwokerto - Solo Balapan</Text>
                             </View>

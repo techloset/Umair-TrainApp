@@ -40,7 +40,7 @@ const CardList = ({ title, textBody }) => {
                     {
                         !content &&
                         <ScrollView>
-                            <ScrollView style={{ borderTopWidth: 1, borderColor: '#333E63', flex: 1, }}>
+                            <ScrollView style={{ borderTopWidth: 1, borderColor: '#9F9FB9', flex: 1, }}>
                                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, marginTop: 16 }}>
 
                                     <View style={{ gap: 8 }}>

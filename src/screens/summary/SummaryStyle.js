@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         gap: 20,
         marginLeft: 26,
-        marginTop: 34,
+        marginTop: 58,
 
 
 

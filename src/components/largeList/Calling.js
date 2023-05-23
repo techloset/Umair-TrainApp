@@ -6,7 +6,7 @@ const Calling = (props) => {
 
     return (
         <View style={styles.hello}>
-            <Text style={[styles.text, { color: props.color, backgroundColor: props.backgroundColor, borderRadius: props.borderRadius, paddingHorizontal: props.paddingHorizontal, paddingVertical: props.paddingVertical },]}>{props.text}</Text>
+            <Text style={[styles.text, { color: props.color, backgroundColor: props.backgroundColor, borderRadius: props.borderRadius, width: props.width, height: props.height },]}>{props.text}</Text>
 
         </View>
     )
@@ -25,5 +25,6 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 10,
         fontFamily: 'PlusJakartaSans-Bold',
+        textAlign: 'center'
     }
 })

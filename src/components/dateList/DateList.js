@@ -45,7 +45,7 @@ const DateList = () => {
         {
             id: '5',
             title: '19',
-            name: 'REB'
+            name: 'RAB'
         },
         {
             id: '6',
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
 
     },
     titleColor: {
-        color: 'black',
+        color: '#88879C',
     },
     title: {
         display: 'flex',

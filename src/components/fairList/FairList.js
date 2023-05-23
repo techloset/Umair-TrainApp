@@ -7,7 +7,8 @@ import {
     Text,
     ScrollView,
     image,
-    Image
+    Image,
+    TouchableOpacity
 } from 'react-native';
 import Calling from '../largeList/Calling';
 
@@ -19,7 +20,7 @@ const FairList = () => {
         {
             id: '1',
 
-            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} width={75} height={18} />,
 
             title: 'Joglosemarkerto',
             fair: 'Rp149.000',
@@ -34,12 +35,12 @@ const FairList = () => {
         {
             id: '2',
 
-            tips: <Calling text='Ekonomi - C' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - C' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} width={75} height={18} />,
 
             title: 'Joglosemarkerto',
             fair: 'Rp74.000',
             sisa: 'Sisa 24',
-            jam: '6 jam 35 menit',
+            jam: '5 jam 35 menit',
             arrivalTime: '06.30',
             departureTime: '11.35',
             // hello: <Hello image={require('../../assets/phone.png')} width={107} height={107} />
@@ -48,12 +49,12 @@ const FairList = () => {
         {
             id: '3',
 
-            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - A' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} width={75} height={18} />,
 
             title: 'Bima',
             fair: 'Rp335.000',
             sisa: 'Sisa 26',
-            jam: '6 jam 35 menit',
+            jam: '3 jam 35 menit',
             arrivalTime: '03.00',
             departureTime: '06.35',
             // hello: <Hello image={require('../../assets/phone.png')} width={107} height={107} />
@@ -62,12 +63,12 @@ const FairList = () => {
         {
             id: '4',
 
-            tips: <Calling text='Ekonomi - B' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - B' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} width={75} height={18} />,
 
             title: 'Bengawan',
             fair: 'Rp129.000',
             sisa: 'Sisa 28',
-            jam: '6 jam 35 menit',
+            jam: '4 jam 35 menit',
             arrivalTime: '05.00',
             departureTime: '9.35',
             // hello: <Hello image={require('../../assets/phone.png')} width={107} height={107} />
@@ -76,12 +77,12 @@ const FairList = () => {
         {
             id: '5',
 
-            tips: <Calling text='Ekonomi - D' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - D' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} width={75} height={18} />,
 
             title: 'Joglosemarkerto',
             fair: 'Rp149.000',
             sisa: 'Sisa 2',
-            jam: '6 jam 35 menit',
+            jam: '2 jam 35 menit',
             arrivalTime: '14.00',
             departureTime: '18.35',
             // hello: <Hello image={require('../../assets/phone.png')} width={107} height={107} />
@@ -90,7 +91,7 @@ const FairList = () => {
         {
             id: '6',
 
-            tips: <Calling text='Ekonomi - D' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
+            tips: <Calling text='Ekonomi - D' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} width={75} height={18} />,
 
             title: 'Joglosemarkerto',
             fair: 'Rp149.000',
@@ -115,8 +116,8 @@ const FairList = () => {
                     <Text style={styles.title}>{title}</Text>
                     <View style={{ display: 'flex', flexDirection: 'row', marginTop: 12, alignItems: 'center', gap: 10 }}>
                         <View style={{ display: 'flex', gap: 4 }}>
-                            <Text>PWT</Text>
-                            <Text>{arrivalTime}</Text>
+                            <Text style={{ fontSize: 10, fontFamily: 'PlusJakartaSans-Normal', color: '#88879C' }}>PWT</Text>
+                            <Text style={{ fontSize: 10, fontFamily: 'PlusJakartaSans-Normal', color: '#88879C' }}>{arrivalTime}</Text>
                         </View>
                         <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', alignContent: 'center' }}>
                             <View style={{ width: 6, height: 6, borderRadius: 6, backgroundColor: '#FFFFFF00', borderWidth: 1, borderColor: '#E0E0E0' }}></View>
@@ -124,8 +125,8 @@ const FairList = () => {
                             <View style={{ width: 6, height: 6, borderRadius: 6, backgroundColor: '#2D9CDB', borderWidth: 1, borderColor: '#2F80ED' }}></View>
                         </View>
                         <View style={{ display: 'flex', gap: 4 }}>
-                            <Text>SLO</Text>
-                            <Text>{departureTime}</Text>
+                            <Text style={{ fontSize: 10, fontFamily: 'PlusJakartaSans-Normal', color: '#88879C' }}>SLO</Text>
+                            <Text style={{ fontSize: 10, fontFamily: 'PlusJakartaSans-Normal', color: '#88879C' }}>{departureTime}</Text>
                         </View>
                     </View>
                     <View style={{ display: 'flex', flexDirection: 'row', marginTop: 12, gap: 20 }}>
@@ -138,7 +139,7 @@ const FairList = () => {
 
                     <Text style={styles.fair}>{fair}</Text>
                     <Text style={{ color: '#EB5757', fontSize: 10, marginTop: 5, fontFamily: 'PlusJakartaSans-Bold', display: 'flex', textAlign: 'right' }}>{sisa}</Text>
-                    <View style={{ display: 'flex', flexDirection: 'row-reverse', marginTop: 41 }}>
+                    <View style={{ display: 'flex', flexDirection: 'row-reverse', marginTop: 41 }} >
                         {arrow}
                     </View>
                 </View>

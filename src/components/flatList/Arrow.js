@@ -1,15 +1,17 @@
-import { StyleSheet, Pressable, Image, View } from 'react-native'
+import { StyleSheet, Pressable, Image, View, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 
 const Arrow = () => {
+    const navigation = useNavigation()
     return (
         <View>
-            <Pressable style={styles.radial}>
+            <TouchableOpacity style={styles.radial} onPress={() => navigation.navigate('Summary')}>
                 <Image source={require('../../assets/rightArrow.png')} style={{
                     width: 9, height: 9,
 
                 }} />
-            </Pressable>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -32,6 +34,7 @@ const styles = StyleSheet.create({
         shadowRadius: 20.00,
         elevation: 24,
         display: 'flex',
+
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center'

@@ -18,14 +18,14 @@ const Large = () => {
             title: 'Tetap jaga komunikasi selama di kereta',
 
             tips: <Calling text='Tips' color='#85D3FF' backgroundColor="#E0F3FF" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
-            hello: <Hello image={require('../../assets/Berita.png')} width={135} height={120} />
+            hello: <Hello image={require('../../assets/Call.png')} width={100} height={100} />
         },
 
         {
             id: '2',
             title: 'Protokol kesehatan di kereta',
             tips: <Calling text='Update' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
-            hello: <Hello image={require('../../assets/good.png')} width={100} height={100} />
+            hello: <Hello image={require('../../assets/Hand2.png')} width={100} height={100} />
         },
 
     ];
@@ -37,7 +37,7 @@ const Large = () => {
                 <Text style={styles.tips}>{tips}</Text>
                 <Text style={styles.title}>{title}</Text>
             </View>
-            <View>
+            <View style={{ marginHorizontal: 8 }}>
                 {hello}
             </View>
 
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         backgroundColor: '#FFFFFF',
         borderRadius: 8,
-        width: 280,
+        width: 262,
         height: 171,
         marginVertical: 8,
         marginHorizontal: 16,

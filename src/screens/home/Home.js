@@ -6,14 +6,17 @@ import Icon from '../../assets/icon.png'
 import Hand from '../../assets/hand.png'
 import List from '../../components/flatList/FlatList'
 import Large from '../../components/largeList/LargeList'
-import image from '../../assets/Background.png'
+import image from '../../assets/Background1st.png'
 import { styles } from './HomeStyle'
 import { BackgroundImage } from '@rneui/base'
 const Home = ({ navigation }) => {
     return (
         <>
+            <StatusBar translucent={true} backgroundColor={'transparent'} barStyle={'dark-content'} />
             <ScrollView style={styles.container}>
+
                 <BackgroundImage source={image}>
+
 
                     <TouchableOpacity onPress={() => navigation.navigate('TicketList')}>
 
@@ -34,27 +37,33 @@ const Home = ({ navigation }) => {
                             <Image source={require('../../assets/mdi.png')} style={{ width: 18, height: 14, marginTop: 8 }} />
                             <Text style={{ color: '#59597C', fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }}>SLO</Text>
                         </View>
-                        <View style={{ display: 'flex', flexDirection: 'row', marginHorizontal: 16, justifyContent: 'space-between', marginTop: 5 }}>
-                            <Text style={{ fontSize: 10, color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Purwokerto</Text>
-                            <Text style={{ fontSize: 10, color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Solo Balapan</Text>
+                        <View style={{ gap: 16 }}>
+
+                            <View style={{ display: 'flex', flexDirection: 'row', marginHorizontal: 16, justifyContent: 'space-between', marginTop: 5, }}>
+                                <Text style={{ fontSize: 10, color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Purwokerto</Text>
+
+                                <Text style={{ fontSize: 10, color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Solo Balapan</Text>
+
+                            </View>
+                            <View style={{ marginHorizontal: 16, borderBottomWidth: 1, borderColor: '#F2F2F2' }}>
+                                {/* <Image source={require('../../assets/line.png')} style={{ width: '92%' }} /> */}
+                            </View>
                         </View>
-                        <View style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', alignItems: 'center', marginTop: 16, }}>
-                            <Image source={require('../../assets/line.png')} style={{ width: 320 }} />
-                        </View>
+
                         <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, }}>
                             <View style={{ gap: 4 }}>
                                 <Text style={{ fontSize: 10, fontFamily: 'PlusJakartaSans-Bold', color: '#2D9CDB', marginTop: 14 }}>Tanggal keberangkatan</Text>
                                 <Text style={{ color: '#59597C', fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }}>Rabu, 12 Agustus 2020</Text>
                             </View>
-                            <View style={{ display: 'flex', flexDirection: 'row', gap: 10 }}>
+                            <View style={{ display: 'flex', flexDirection: 'row', gap: 10, marginTop: 14 }}>
 
-                                <View>
+                                <View >
 
                                     <CardItem />
                                 </View>
 
 
-                                <Text style={{ color: '#59597C', fontSize: 10, fontFamily: 'PlusJakartaSans-Bold', marginTop: 18 }}>Pulang pergi</Text>
+                                <Text style={{ color: '#59597C', fontSize: 10, fontFamily: 'PlusJakartaSans-Bold', marginTop: 11 }}>Pulang pergi</Text>
 
                             </View>
                         </View>
@@ -66,7 +75,7 @@ const Home = ({ navigation }) => {
                             </View>
                             <View>
                                 <TouchableOpacity style={[{ backgroundColor: '#F8862A', width: 128, height: 40, borderRadius: 8, justifyContent: 'center' }, styles.cari]} onPress={() => navigation.navigate('TicketList')}>
-                                    <Text style={{ fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', color: 'white', alignSelf: 'center', justifyContent: 'center', alignItems: 'center', alignSelf: 'center', textAlignVertical: 'center', verticalAlign: 'auto', marginBottom: 4 }}>CARI TIKET</Text>
+                                    <Text style={{ fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', color: 'white', textAlign: 'center' }}>CARI  TIKET</Text>
                                 </TouchableOpacity>
                             </View>
 

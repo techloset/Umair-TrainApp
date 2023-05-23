@@ -5,9 +5,7 @@ import {
     FlatList,
     StyleSheet,
     Text,
-    StatusBar,
-    Pressable,
-    Image
+
 } from 'react-native';
 
 import Besok from './Besok'
@@ -85,7 +83,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-
         backgroundColor: 'white',
         padding: 20,
         marginVertical: 8,
@@ -112,9 +109,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: "white",
         paddingTop: 2,
-
-
-
         shadowColor: "#FE9B4B",
         shadowOffset: {
             width: 0,
@@ -129,7 +123,6 @@ const styles = StyleSheet.create({
         height: 26,
         color: '#85D3FF',
         borderRadius: 8,
-
         textAlign: 'center',
         paddingTop: 2,
     }
