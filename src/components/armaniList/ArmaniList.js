@@ -7,6 +7,7 @@ import {
     Text,
     StatusBar,
 } from 'react-native';
+import { fontPixel, heightPixel, pixelSizeHorizontal, pixelSizeVertical, widthPixel } from '../../responsiveness/Responsiveness';
 
 const DATA = [
     {
@@ -59,15 +60,15 @@ const styles = StyleSheet.create({
     container: {
 
         // marginTop: StatusBar.currentHeight || 0,
-        marginTop: 10
+        marginTop: pixelSizeVertical(10)
     },
     item: {
         backgroundColor: '#FFFFFF',
-        paddingHorizontal: 16,
-        width: 300,
-        height: 79,
-        marginVertical: 8,
-        marginHorizontal: 12,
+        paddingHorizontal: pixelSizeHorizontal(16),
+        width: widthPixel(300),
+        height: heightPixel(79),
+        marginVertical: pixelSizeVertical(8),
+        marginHorizontal: pixelSizeHorizontal(12),
         display: 'flex', flexDirection: 'row',
         justifyContent: 'space-between',
         alignContent: 'center',
@@ -77,26 +78,26 @@ const styles = StyleSheet.create({
 
     },
     title: {
-        fontSize: 14,
+        fontSize: fontPixel(14),
         color: '#59597C',
         fontFamily: 'PlusJakartaSans-Bold',
-        marginBottom: 5
+        marginBottom: pixelSizeVertical(5)
     },
     name: {
         color: '#88879C',
-        fontSize: 10,
+        fontSize: fontPixel(10),
         fontFamily: 'PlusJakartaSans-Regular',
     },
     group: {
         color: '#FFFFFF',
         textAlign: 'center',
-        paddingTop: 4,
+        paddingTop: pixelSizeVertical(4),
 
         backgroundColor: '#FA8D34',
-        width: 132,
-        height: 26,
+        width: widthPixel(132),
+        height: heightPixel(26),
         borderRadius: 8,
-        fontSize: 10,
+        fontSize: fontPixel(10),
         fontFamily: 'PlusJakartaSans-Bold',
     }
 

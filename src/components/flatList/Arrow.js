@@ -1,6 +1,7 @@
 import { StyleSheet, Pressable, Image, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
+import { heightPixel, widthPixel } from '../../responsiveness/Responsiveness'
 
 const Arrow = () => {
     const navigation = useNavigation()
@@ -8,7 +9,7 @@ const Arrow = () => {
         <View>
             <TouchableOpacity style={styles.radial} onPress={() => navigation.navigate('Summary')}>
                 <Image source={require('../../assets/rightArrow.png')} style={{
-                    width: 9, height: 9,
+                    width: widthPixel(9), height: heightPixel(9),
 
                 }} />
             </TouchableOpacity>
@@ -22,8 +23,8 @@ const styles = StyleSheet.create({
     radial: {
         backgroundColor: '#85D3FF',
         backgroundImage: 'radial-gradient(125% 125% at 85.42% 0%, #85D3FF 0%, #2596D7 100%)',
-        width: 24,
-        height: 24,
+        width: widthPixel(24),
+        height: heightPixel(24),
         borderRadius: 8,
         shadowColor: "#5AB8ED",
         shadowOffset: {

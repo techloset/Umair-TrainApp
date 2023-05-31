@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Pressable, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import LinearGradient from 'react-native-linear-gradient'
+import { heightPixel, widthPixel } from '../../responsiveness/Responsiveness';
 
 const Chair = () => {
     const [colorIndex, setColorIndex] = useState(0);
@@ -32,8 +33,8 @@ export default Chair
 
 const styles = StyleSheet.create({
     button: {
-        width: 28,
-        height: 28,
+        width: widthPixel(28),
+        height: heightPixel(28),
         borderRadius: 4,
         borderWidth: 2,  // Add a border width
         borderColor: '#F2F2F2',  // Add a border color

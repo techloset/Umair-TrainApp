@@ -1,10 +1,11 @@
 import { View, Pressable, Text, StyleSheet } from 'react-native'
+import { fontPixel, pixelSizeVertical } from '../../responsiveness/Responsiveness'
 const Besok = (props) => {
     return (
 
         <View style={styles.shadow}>
             <Pressable style={props.style}>
-                <Text style={[props.style, { fontSize: 10, fontFamily: 'PlusJakartaSans-Bold' }]}>{props.name}</Text>
+                <Text style={[props.style, { fontSize: fontPixel(10), fontFamily: 'PlusJakartaSans-Bold' }]}>{props.name}</Text>
             </Pressable>
         </View>
     )
@@ -13,8 +14,8 @@ const Besok = (props) => {
 const styles = StyleSheet.create({
     box: {
 
-        fontSize: 12, fontFamily: 'PlusJakartaSans-Bold',
-        alignSelf: 'center', marginBottom: 4
+        fontSize: fontPixel(12), fontFamily: 'PlusJakartaSans-Bold',
+        alignSelf: 'center', marginBottom: pixelSizeVertical(4)
     }
 
 })

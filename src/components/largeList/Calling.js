@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
+import { fontPixel } from '../../responsiveness/Responsiveness'
 
 
 const Calling = (props) => {
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        fontSize: 10,
+        fontSize: fontPixel(10),
         fontFamily: 'PlusJakartaSans-Bold',
         textAlign: 'center'
     }

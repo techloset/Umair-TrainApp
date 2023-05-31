@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import Calling from './Calling';
 import Hello from './Image'
+import { fontPixel, heightPixel, pixelSizeHorizontal, pixelSizeVertical, widthPixel } from '../../responsiveness/Responsiveness';
 const Large = () => {
 
     const DATA = [
@@ -17,15 +18,15 @@ const Large = () => {
             id: '1',
             title: 'Tetap jaga komunikasi selama di kereta',
 
-            tips: <Calling text='Tips' color='#85D3FF' backgroundColor="#E0F3FF" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
-            hello: <Hello image={require('../../assets/Call.png')} width={100} height={100} />
+            tips: <Calling text='Tips' color='#85D3FF' backgroundColor="#E0F3FF" borderRadius={4} paddingHorizontal={pixelSizeHorizontal(8)} paddingVertical={pixelSizeVertical(4)} />,
+            hello: <Hello image={require('../../assets/Call.png')} width={widthPixel(100)} height={heightPixel(100)} />
         },
 
         {
             id: '2',
             title: 'Protokol kesehatan di kereta',
-            tips: <Calling text='Update' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={4} />,
-            hello: <Hello image={require('../../assets/Hand2.png')} width={100} height={100} />
+            tips: <Calling text='Update' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={pixelSizeHorizontal(8)} paddingVertical={pixelSizeVertical(4)} />,
+            hello: <Hello image={require('../../assets/Hand2.png')} width={widthPixel(100)} height={heightPixel(100)} />
         },
 
     ];
@@ -37,7 +38,7 @@ const Large = () => {
                 <Text style={styles.tips}>{tips}</Text>
                 <Text style={styles.title}>{title}</Text>
             </View>
-            <View style={{ marginHorizontal: 8 }}>
+            <View style={{ marginHorizontal: pixelSizeHorizontal(8) }}>
                 {hello}
             </View>
 
@@ -68,26 +69,26 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         backgroundColor: '#FFFFFF',
         borderRadius: 8,
-        width: 262,
-        height: 171,
-        marginVertical: 8,
-        marginHorizontal: 16,
+        width: widthPixel(262),
+        height: heightPixel(171),
+        marginVertical: pixelSizeVertical(8),
+        marginHorizontal: pixelSizeHorizontal(16),
         justifyContent: 'space-between',
-        paddingHorizontal: 24,
+        paddingHorizontal: pixelSizeHorizontal(24),
         alignContent: 'center',
         alignItems: 'center'
 
     },
     title: {
-        fontSize: 14,
+        fontSize: fontPixel(14),
         color: '#333E63',
         fontFamily: 'PlusJakartaSans-Bold',
-        width: 114,
-        height: 72,
-        lineHeight: 24
+        width: widthPixel(114),
+        height: heightPixel(72),
+        lineHeight: heightPixel(24)
     },
     tips: {
-        fontSize: 36
+        fontSize: fontPixel(36)
     }
 });
 

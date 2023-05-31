@@ -9,6 +9,7 @@ import {
     StatusBar,
 } from 'react-native';
 import CustomDropDown from './CardList';
+import { fontPixel, pixelSizeHorizontal, pixelSizeVertical } from '../../responsiveness/Responsiveness';
 
 const DATA = [
     {
@@ -39,12 +40,12 @@ const styles = StyleSheet.create({
     },
     item: {
         backgroundColor: '#f9c2ff',
-        padding: 20,
-        marginVertical: 8,
-        marginHorizontal: 16,
+        padding: pixelSizeHorizontal(20),
+        marginVertical: pixelSizeVertical(8),
+        marginHorizontal: pixelSizeHorizontal(16),
     },
     title: {
-        fontSize: 32,
+        fontSize: fontPixel(32),
     },
 });
 

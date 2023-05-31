@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Pressable, ScrollView } from 
 import React, { useState } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { Item } from 'react-native-paper/lib/typescript/src/components/List/List';
+import { fontPixel, heightPixel, pixelSizeVertical, widthPixel } from '../../responsiveness/Responsiveness';
 const Gerbong = (props) => {
     const [colorIndex, setColorIndex] = useState(0)
     const colors = [['white', 'white'], ['#85D3FF', '#2596D7'], ['#FE9B4B', '#FE9B4B']];
@@ -40,7 +41,7 @@ const Gerbong = (props) => {
                 <LinearGradient colors={currentColors} style={styles.button} >
 
 
-                    <Text style={[{ display: 'flex', alignSelf: 'center', paddingVertical: 35, fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }, { color: changeColor ? 'white' : '#88879C' }]} >{props.title}</Text>
+                    <Text style={[{ display: 'flex', alignSelf: 'center', paddingVertical: pixelSizeVertical(35), fontSize: fontPixel(14), fontFamily: 'PlusJakartaSans-Bold' }, { color: changeColor ? 'white' : '#88879C' }]} >{props.title}</Text>
                 </LinearGradient>
             </TouchableOpacity >
         </ScrollView>
@@ -49,8 +50,8 @@ const Gerbong = (props) => {
 
 const styles = StyleSheet.create({
     button: {
-        width: 38,
-        height: 100,
+        width: widthPixel(38),
+        height: heightPixel(100),
 
         borderColor: '#F2F2F2',
         borderRadius: 8,

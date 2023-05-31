@@ -9,6 +9,7 @@ import {
     View,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { fontPixel, pixelSizeHorizontal, pixelSizeVertical, widthPixel } from '../../responsiveness/Responsiveness';
 
 const DateList = () => {
     const [selectedId, setSelectedId] = useState();
@@ -114,9 +115,9 @@ const styles = StyleSheet.create({
     item: {
 
 
-        marginVertical: 8,
-        marginHorizontal: 16,
-        width: 56,
+        marginVertical: pixelSizeVertical(8),
+        marginHorizontal: pixelSizeHorizontal(16),
+        width: widthPixel(56),
 
         borderRadius: 8,
 
@@ -143,14 +144,14 @@ const styles = StyleSheet.create({
     },
     title: {
         display: 'flex',
-        paddingTop: 13,
-        paddingBottom: 5,
+        paddingTop: pixelSizeVertical(13),
+        paddingBottom: pixelSizeVertical(5),
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
         color: 'white',
 
-        fontSize: 14,
+        fontSize: fontPixel(14),
         fontFamily: 'PlusJakartaSans-Bold',
     },
     name: {
@@ -159,9 +160,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'center',
         color: 'white',
-        fontSize: 10,
+        fontSize: fontPixel(10),
         fontFamily: 'PlusJakartaSans-Bold',
-        paddingBottom: 17
+        paddingBottom: pixelSizeVertical(17)
     },
     // gradient: {
 

@@ -10,6 +10,7 @@ import {
 
 import Besok from './Besok'
 import Arrow from './Arrow';
+import { fontPixel, heightPixel, pixelSizeHorizontal, pixelSizeVertical, widthPixel } from '../../responsiveness/Responsiveness';
 
 const App = () => {
 
@@ -84,31 +85,31 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: 'white',
-        padding: 20,
-        marginVertical: 8,
-        marginHorizontal: 16,
-        width: 248,
-        height: 86,
+        padding: pixelSizeHorizontal(20),
+        marginVertical: pixelSizeVertical(8),
+        marginHorizontal: pixelSizeHorizontal(16),
+        width: widthPixel(248),
+        height: heightPixel(86),
         borderRadius: 16
     },
     title: {
-        fontSize: 14,
+        fontSize: fontPixel(14),
         fontFamily: 'PlusJakartaSans-Bold',
     },
 
 
     name: {
         color: '#88879C',
-        fontSize: 10,
+        fontSize: fontPixel(10),
         fontFamily: 'PlusJakartaSans-Regular'
     },
     Besok: {
         backgroundColor: '#FE9B4B',
-        width: 47,
-        height: 26,
+        width: widthPixel(47),
+        height: heightPixel(26),
         textAlign: 'center',
         color: "white",
-        paddingTop: 2,
+        paddingTop: pixelSizeVertical(2),
         shadowColor: "#FE9B4B",
         shadowOffset: {
             width: 0,
@@ -119,12 +120,12 @@ const styles = StyleSheet.create({
         elevation: 18
     },
     Hari: {
-        backgroundColor: "#E0F3FF", width: 42,
-        height: 26,
+        backgroundColor: "#E0F3FF", width: widthPixel(42),
+        height: heightPixel(26),
         color: '#85D3FF',
         borderRadius: 8,
         textAlign: 'center',
-        paddingTop: 2,
+        paddingTop: pixelSizeVertical(2),
     }
 
 });

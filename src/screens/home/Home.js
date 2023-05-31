@@ -9,6 +9,7 @@ import Large from '../../components/largeList/LargeList'
 import image from '../../assets/Background1st.png'
 import { styles } from './HomeStyle'
 import { BackgroundImage } from '@rneui/base'
+import { fontPixel, heightPixel, pixelSizeHorizontal, pixelSizeVertical, widthPixel } from '../../responsiveness/Responsiveness'
 const Home = ({ navigation }) => {
     return (
         <>
@@ -23,39 +24,39 @@ const Home = ({ navigation }) => {
                         <Image source={Icon} style={styles.img} />
                     </TouchableOpacity>
                     <View style={styles.first}>
-                        <Text style={{ fontFamily: 'PlusJakartaSans-Bold', fontSize: 24, width: 164, lineHeight: 32, marginTop: 44, color: '#59597C' }} >Mau pergi ke
+                        <Text style={styles.hett} >Mau pergi ke
                             mana kali ini?</Text>
-                        <Image source={Hand} style={{ width: 100, height: 150, }} />
+                        <Image source={Hand} style={{ width: widthPixel(100), height: heightPixel(150), }} />
                     </View>
                     <View style={styles.border}>
-                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, marginTop: 22 }}>
-                            <Text style={{ color: '#2D9CDB', fontFamily: 'PlusJakartaSans-Bold', fontSize: 10 }}>Keberangkatan</Text>
-                            <Text style={{ color: '#2D9CDB', fontFamily: 'PlusJakartaSans-Bold', fontSize: 10 }}>Tujuan</Text>
+                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(22) }}>
+                            <Text style={{ color: '#2D9CDB', fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(10) }}>Keberangkatan</Text>
+                            <Text style={{ color: '#2D9CDB', fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(10) }}>Tujuan</Text>
                         </View>
-                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, marginTop: 8 }}>
-                            <Text style={{ color: '#59597C', fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }}>PWT</Text>
-                            <Image source={require('../../assets/mdi.png')} style={{ width: 18, height: 14, marginTop: 8 }} />
-                            <Text style={{ color: '#59597C', fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }}>SLO</Text>
+                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(8) }}>
+                            <Text style={{ color: '#59597C', fontSize: fontPixel(14), fontFamily: 'PlusJakartaSans-Bold' }}>PWT</Text>
+                            <Image source={require('../../assets/mdi.png')} style={{ width: widthPixel(18), height: heightPixel(14), marginTop: pixelSizeVertical(8) }} />
+                            <Text style={{ color: '#59597C', fontSize: fontPixel(14), fontFamily: 'PlusJakartaSans-Bold' }}>SLO</Text>
                         </View>
                         <View style={{ gap: 16 }}>
 
-                            <View style={{ display: 'flex', flexDirection: 'row', marginHorizontal: 16, justifyContent: 'space-between', marginTop: 5, }}>
-                                <Text style={{ fontSize: 10, color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Purwokerto</Text>
+                            <View style={{ display: 'flex', flexDirection: 'row', marginHorizontal: pixelSizeHorizontal(16), justifyContent: 'space-between', marginTop: pixelSizeVertical(5), }}>
+                                <Text style={{ fontSize: fontPixel(10), color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Purwokerto</Text>
 
-                                <Text style={{ fontSize: 10, color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Solo Balapan</Text>
+                                <Text style={{ fontSize: fontPixel(10), color: '#88879C', fontFamily: 'PlusJakartaSans-Regular' }}>Stasiun Solo Balapan</Text>
 
                             </View>
-                            <View style={{ marginHorizontal: 16, borderBottomWidth: 1, borderColor: '#F2F2F2' }}>
+                            <View style={{ marginHorizontal: pixelSizeHorizontal(16), borderBottomWidth: 1, borderColor: '#F2F2F2' }}>
                                 {/* <Image source={require('../../assets/line.png')} style={{ width: '92%' }} /> */}
                             </View>
                         </View>
 
-                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, }}>
+                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), }}>
                             <View style={{ gap: 4 }}>
-                                <Text style={{ fontSize: 10, fontFamily: 'PlusJakartaSans-Bold', color: '#2D9CDB', marginTop: 14 }}>Tanggal keberangkatan</Text>
-                                <Text style={{ color: '#59597C', fontSize: 14, fontFamily: 'PlusJakartaSans-Bold' }}>Rabu, 12 Agustus 2020</Text>
+                                <Text style={{ fontSize: fontPixel(10), fontFamily: 'PlusJakartaSans-Bold', color: '#2D9CDB', marginTop: pixelSizeVertical(14) }}>Tanggal keberangkatan</Text>
+                                <Text style={{ color: '#59597C', fontSize: fontPixel(14), fontFamily: 'PlusJakartaSans-Bold' }}>Rabu, 12 Agustus 2020</Text>
                             </View>
-                            <View style={{ display: 'flex', flexDirection: 'row', gap: 10, marginTop: 14 }}>
+                            <View style={{ display: 'flex', flexDirection: 'row', gap: 10, marginTop: pixelSizeVertical(14) }}>
 
                                 <View >
 
@@ -63,19 +64,19 @@ const Home = ({ navigation }) => {
                                 </View>
 
 
-                                <Text style={{ color: '#59597C', fontSize: 10, fontFamily: 'PlusJakartaSans-Bold', marginTop: 11 }}>Pulang pergi</Text>
+                                <Text style={{ color: '#59597C', fontSize: fontPixel(14), fontFamily: 'PlusJakartaSans-Bold', marginTop: pixelSizeVertical(11) }}>Pulang pergi</Text>
 
                             </View>
                         </View>
-                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 16, marginTop: 14 }}>
+                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(14) }}>
 
                             <View style={{ display: 'flex', gap: 5 }}>
-                                <Text style={{ color: '#2D9CDB', fontSize: 10, fontFamily: 'PlusJakartaSans-Bold' }}>Jumlah penumpang</Text>
+                                <Text style={{ color: '#2D9CDB', fontSize: fontPixel(10), fontFamily: 'PlusJakartaSans-Bold' }}>Jumlah penumpang</Text>
                                 <Counter />
                             </View>
                             <View>
-                                <TouchableOpacity style={[{ backgroundColor: '#F8862A', width: 128, height: 40, borderRadius: 8, justifyContent: 'center' }, styles.cari]} onPress={() => navigation.navigate('TicketList')}>
-                                    <Text style={{ fontSize: 12, fontFamily: 'PlusJakartaSans-Bold', color: 'white', textAlign: 'center' }}>CARI  TIKET</Text>
+                                <TouchableOpacity style={[{ backgroundColor: '#F8862A', width: widthPixel(128), height: heightPixel(40), borderRadius: 8, justifyContent: 'center' }, styles.cari]} onPress={() => navigation.navigate('TicketList')}>
+                                    <Text style={{ fontSize: fontPixel(12), fontFamily: 'PlusJakartaSans-Bold', color: 'white', textAlign: 'center' }}>CARI  TIKET</Text>
                                 </TouchableOpacity>
                             </View>
 
@@ -84,11 +85,11 @@ const Home = ({ navigation }) => {
                     </View>
 
                     <View>
-                        <Text style={{ color: '#333E63', fontFamily: 'PlusJakartaSans-Bold', marginTop: 24, marginLeft: 32, fontSize: 15 }}>Tiket saya</Text>
+                        <Text style={{ color: '#333E63', fontFamily: 'PlusJakartaSans-Bold', marginTop: pixelSizeVertical(24), marginLeft: pixelSizeHorizontal(32), fontSize: fontPixel(15) }}>Tiket saya</Text>
                     </View>
                     <List />
                     <View>
-                        <Text style={{ color: '#333E63', fontFamily: 'PlusJakartaSans-Bold', fontSize: 15, marginTop: 24, marginLeft: 32 }}>Berita</Text>
+                        <Text style={{ color: '#333E63', fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(15), marginTop: pixelSizeVertical(24), marginLeft: pixelSizeHorizontal(32) }}>Berita</Text>
                     </View>
                     <Large />
 
@@ -99,4 +100,6 @@ const Home = ({ navigation }) => {
     )
 }
 export default Home
+
+
 

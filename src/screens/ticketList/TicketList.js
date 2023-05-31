@@ -5,6 +5,7 @@ import DateList from '../../components/dateList/DateList'
 import FairList from '../../components/fairList/FairList'
 import Button from '../../components/button/Button'
 import { BlurView } from "@react-native-community/blur";
+import { fontPixel, heightPixel, widthPixel, pixelSizeVertical } from '../../responsiveness/Responsiveness'
 const TicketList = ({ navigation }) => {
     return (
         <>
@@ -17,9 +18,9 @@ const TicketList = ({ navigation }) => {
                             <View style={styles.Hello}>
                                 <TouchableOpacity onPress={() => navigation.navigate('Home')}>
 
-                                    <Image source={require('../../assets/LeftArrow.png')} style={{ width: 16, height: 13, marginTop: 10 }} />
+                                    <Image source={require('../../assets/LeftArrow.png')} style={{ width: widthPixel(16), height: heightPixel(13), marginTop: pixelSizeVertical(10) }} />
                                 </TouchableOpacity>
-                                <Text style={{ color: '#333E63', fontSize: 18, fontFamily: 'PlusJakartaSans-Bold', }}>Purwokerto - Solo Balapan</Text>
+                                <Text style={{ color: '#333E63', fontSize: fontPixel(18), fontFamily: 'PlusJakartaSans-Bold', }}>Purwokerto - Solo Balapan</Text>
                             </View>
 
 

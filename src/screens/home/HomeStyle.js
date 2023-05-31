@@ -1,12 +1,19 @@
 import { StyleSheet } from "react-native"
+import {
+    fontPixel, widthPixel, pixelSizeVertical,
+    heightPixel,
 
+
+    pixelSizeHorizontal,
+} from "../../../src/responsiveness/Responsiveness"
 export const styles = StyleSheet.create({
     img: {
 
-        width: 16,
-        height: 14,
-        marginTop: 55,
-        marginLeft: 35,
+        width: widthPixel(16),
+        height: heightPixel(14),
+        marginTop: pixelSizeVertical(55),
+
+        marginLeft: pixelSizeHorizontal(35)
 
 
     }
@@ -19,8 +26,8 @@ export const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginRight: 50,
-        marginLeft: 32
+        marginRight: pixelSizeHorizontal(50),
+        marginLeft: pixelSizeHorizontal(32),
 
 
 
@@ -28,10 +35,10 @@ export const styles = StyleSheet.create({
     border: {
 
 
-        height: 229,
+        height: heightPixel(229),
         backgroundColor: '#FAFCFE',
 
-        marginLeft: 8,
+        marginLeft: pixelSizeHorizontal(8),
 
         display: 'flex'
         ,
@@ -52,5 +59,6 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.24,
         shadowRadius: 14.86,
         elevation: 18
-    }
+    },
+    hett: { fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(24), width: widthPixel(164), lineHeight: 32, marginTop: pixelSizeVertical(44), color: '#59597C' }
 })

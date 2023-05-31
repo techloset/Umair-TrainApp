@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, StyleSheet, Text, Pressable, BackgroundColor } from "react-native";
 import { Picker } from '@react-native-picker/picker';
+import { heightPixel, pixelSizeHorizontal, pixelSizeVertical, widthPixel } from "../../responsiveness/Responsiveness";
 
 
 const PickerList = () => {
@@ -14,7 +15,7 @@ const PickerList = () => {
                     <View style={[{ borderBottomColor: !selectedValue ? '#9F9FB9' : '#85D3FF' }, styles.box]}>
                         <Picker
                             selectedValue={selectedValue}
-                            style={{ paddingBottom: 10, marginBottom: -9, marginTop: -8 }}
+                            style={{ paddingBottom: pixelSizeVertical(10), marginBottom: pixelSizeHorizontal(0), marginTop: pixelSizeVertical(2) }}
                             onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
                         >
                             <Picker.Item label="Paspor" value="Paspor" />
@@ -33,9 +34,9 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
 
-        width: 150,
+        width: widthPixel(150),
 
-
+        height: heightPixel(40),
 
 
 
