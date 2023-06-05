@@ -36,8 +36,8 @@ const ChairSelection = () => {
     return (
         <>
             <View style={{ flex: 1 }}>
-                <ImageBackground source={require('../../assets/bg4thScreen.png')} style={{ flex: 3 }}>
-                    <View style={{ flex: 3 }}>
+                <ImageBackground source={require('../../assets/ChairBg.png')} style={{ flex: 3 }}>
+                    <View style={{ flex: 0.8, }}>
                         <View style={{ display: 'flex', flexDirection: 'row', marginTop: pixelSizeVertical(65), justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(32), alignItems: 'center' }}>
                             <Text style={{ color: '#59597C', fontSize: fontPixel(24), fontFamily: 'PlusJakartaSans-Bold', width: widthPixel(148), lineHeight: pixelSizeVertical(36) }}>Pilih tempat dudukmu</Text>
                             <View style={{ gap: 8, alignItems: 'flex-end', marginTop: pixelSizeVertical(17) }}>
@@ -47,6 +47,7 @@ const ChairSelection = () => {
                                 </Text>
                             </View>
                         </View>
+
                         <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: pixelSizeVertical(30), marginHorizontal: pixelSizeHorizontal(32) }}>
                             <View style={{ display: 'flex', flexDirection: 'row', gap: 8, alignItems: 'center' }}>
                                 <View style={{ width: widthPixel(16), height: heightPixel(16), backgroundColor: 'white', borderRadius: 4 }}>
@@ -66,8 +67,14 @@ const ChairSelection = () => {
                                 <Text style={{ color: '#333E63', fontSize: fontPixel(10), fontFamily: 'PlusJakartaSans-Regular' }}>Terpilih</Text>
                             </View>
                         </View>
-                        <View style={{ borderRadius: 16, marginTop: pixelSizeVertical(30), flex: 1, }}>
-                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(24), }}>
+                    </View>
+
+
+                    <View style={{ flex: 2, borderTopWidth: 1.5, borderLeftWidth: 1, borderRightWidth: 1, borderTopRightRadius: 16, borderTopLeftRadius: 16, borderColor: 'white' }}>
+
+
+                        <View style={{ marginTop: pixelSizeVertical(30) }}>
+                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(20), }}>
                                 <View style={{ display: 'flex', flex: 1, }} >
                                     <Text style={{ textAlign: 'center', marginBottom: pixelSizeVertical(20), fontSize: fontPixel(14), fontFamily: 'PlusJakartaSans-Bold', color: '#59597C' }}>Gerbong</Text>
                                     < ScrollView showsVerticalScrollIndicator={false}>
@@ -149,15 +156,16 @@ const ChairSelection = () => {
                                 </View>
                             </View>
                         </View >
-                    </View >
+                    </View>
+
+                    <View style={{ flex: 0.4, backgroundColor: '#F2F9FD' }}>
+                        <TouchableOpacity style={[{ marginHorizontal: pixelSizeHorizontal(32), marginTop: pixelSizeVertical(12) }, styles.hover]}>
+                            <LinearGradient colors={['#85D3FF', '#2596D7']} style={{ borderRadius: 8 }}>
+                                <Text style={{ paddingVertical: pixelSizeHorizontal(18), textAlign: 'center', color: '#FFFFFF', fontSize: fontPixel(12), fontFamily: 'PlusJakartaSans-ExtraBold', }}>PILIH   TEMPAT   DUDUK</Text>
+                            </LinearGradient>
+                        </TouchableOpacity>
+                    </View>
                 </ImageBackground >
-                <View style={{ flex: 0.4, backgroundColor: '#F2F9FD' }}>
-                    <TouchableOpacity style={[{ marginHorizontal: pixelSizeHorizontal(32), marginTop: pixelSizeVertical(12) }, styles.hover]}>
-                        <LinearGradient colors={['#85D3FF', '#2596D7']} style={{ borderRadius: 8 }}>
-                            <Text style={{ paddingVertical: pixelSizeHorizontal(18), textAlign: 'center', color: '#FFFFFF', fontSize: fontPixel(12), fontFamily: 'PlusJakartaSans-ExtraBold', }}>PILIH   TEMPAT   DUDUK</Text>
-                        </LinearGradient>
-                    </TouchableOpacity>
-                </View>
             </View >
         </>
     )

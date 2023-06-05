@@ -15,7 +15,7 @@ const PickerList = () => {
                     <View style={[{ borderBottomColor: !selectedValue ? '#9F9FB9' : '#85D3FF' }, styles.box]}>
                         <Picker
                             selectedValue={selectedValue}
-                            style={{ paddingBottom: pixelSizeVertical(10), marginBottom: pixelSizeHorizontal(0), marginTop: pixelSizeVertical(2) }}
+
                             onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
                         >
                             <Picker.Item label="Paspor" value="Paspor" />
@@ -34,20 +34,23 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
 
-        width: widthPixel(150),
-
-        height: heightPixel(40),
 
 
-
-        backgroundColor: '#F0F9FE'
 
 
 
 
     },
     box: {
-        borderBottomWidth: 2
+        borderBottomWidth: 2,
+        width: widthPixel(150),
+
+
+        backgroundColor: '#F0F9FE',
+        height: heightPixel(40),
+
+
+
     }
 
 });

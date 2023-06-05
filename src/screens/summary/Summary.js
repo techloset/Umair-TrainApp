@@ -15,16 +15,18 @@ const Summary = ({ navigation }) => {
             <StatusBar translucent={true} backgroundColor={'transparent'} barStyle={'dark-content'} />
             <ImageBackground source={require('../../assets/Background3rd.png')} style={{ flex: 1, }}>
                 <View style={{ flex: 4, }}>
+                    <View style={{ borderWidth: 1.5, borderColor: '#FFFFFF', borderBottomRightRadius: 12, borderBottomLeftRadius: 12 }}>
 
-                    <View style={styles.Hello}>
-                        <TouchableOpacity onPress={() => navigation.navigate('TicketList')}>
+                        <View style={styles.Hello}>
+                            <TouchableOpacity onPress={() => navigation.navigate('TicketList')}>
 
-                            <Image source={require('../../assets/LeftArrow.png')} style={{ width: widthPixel(16), height: heightPixel(13), marginTop: pixelSizeVertical(10) }} />
-                        </TouchableOpacity>
-                        <Text style={{ color: '#333E63', fontSize: fontPixel(18), fontFamily: 'PlusJakartaSans-Bold', }}>Ringkasan pemesanan</Text>
+                                <Image source={require('../../assets/LeftArrow.png')} style={{ width: widthPixel(16), height: heightPixel(13), marginTop: pixelSizeVertical(10) }} />
+                            </TouchableOpacity>
+                            <Text style={{ color: '#333E63', fontSize: fontPixel(18), fontFamily: 'PlusJakartaSans-Bold', }}>Ringkasan pemesanan</Text>
+                        </View>
+
+                        <SummaryList />
                     </View>
-
-                    <SummaryList />
                     <View style={{ display: 'flex', flexDirection: 'row', alignContent: 'center', alignItems: 'center', marginLeft: pixelSizeHorizontal(18), gap: 10, marginTop: pixelSizeVertical(6) }}>
                         <Image source={require('../../assets/heart.png')} style={{ width: widthPixel(16), height: heightPixel(13) }} />
                         <Text style={{ fontSize: fontPixel(14), fontFamily: 'PlusJakartaSans-Bold', color: '#333E63' }}>Penumpang tersimpan</Text>
