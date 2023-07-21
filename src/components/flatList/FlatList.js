@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
 
-        // marginTop: StatusBar.currentHeight || 0,
+
     },
     item: {
         display: 'flex',
@@ -90,7 +90,16 @@ const styles = StyleSheet.create({
         marginHorizontal: pixelSizeHorizontal(16),
         width: widthPixel(248),
         height: heightPixel(86),
-        borderRadius: 16
+        borderRadius: 16,
+        shadowColor: "#1582BF",
+
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.17,
+        shadowRadius: 2.54,
+        elevation: 3
     },
     title: {
         fontSize: fontPixel(14),

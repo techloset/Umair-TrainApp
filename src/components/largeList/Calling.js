@@ -7,7 +7,7 @@ const Calling = (props) => {
 
     return (
         <View style={styles.hello}>
-            <Text style={[styles.text, { color: props.color, backgroundColor: props.backgroundColor, borderRadius: props.borderRadius, paddingVertical: props.paddingVertical, paddingHorizontal: props.paddingHorizontal },]}>{props.text}</Text>
+            <Text style={[styles.text, { color: props.color, backgroundColor: props.backgroundColor, borderRadius: props.borderRadius, paddingVertical: props.paddingVertical, paddingHorizontal: props.paddingHorizontal, width: props.width, height: props.height },]}>{props.text}</Text>
 
         </View>
     )

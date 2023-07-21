@@ -3,15 +3,14 @@
 
 import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
-import { color } from '@rneui/base'
 
-import ArrowList from './Accordian'
-import { Item } from 'react-native-paper/lib/typescript/src/components/Drawer/Drawer'
+
+
 import PickerList from '../picker/Picker'
 import { fontPixel, heightPixel, pixelSizeHorizontal, pixelSizeVertical, widthPixel } from '../../responsiveness/Responsiveness'
 
 
-const CardList = ({ title, textBody }) => {
+const CardList = () => {
     const [content, setContent] = useState(false)
 
     return (

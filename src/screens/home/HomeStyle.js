@@ -46,7 +46,16 @@ export const styles = StyleSheet.create({
 
         width: '92%',
 
-        borderRadius: 8
+        borderRadius: 8,
+        shadowColor: "#1582BF",
+
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.17,
+        shadowRadius: 2.54,
+        elevation: 3
 
 
     },

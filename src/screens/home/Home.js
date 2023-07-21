@@ -47,7 +47,7 @@ const Home = ({ navigation }) => {
 
                             </View>
                             <View style={{ marginHorizontal: pixelSizeHorizontal(16), borderBottomWidth: 1, borderColor: '#F2F2F2' }}>
-                                {/* <Image source={require('../../assets/line.png')} style={{ width: '92%' }} /> */}
+                              
                             </View>
                         </View>
 
@@ -76,7 +76,7 @@ const Home = ({ navigation }) => {
                             </View>
                             <View>
                                 <TouchableOpacity style={[{ backgroundColor: '#F8862A', width: widthPixel(128), height: heightPixel(40), borderRadius: 8, justifyContent: 'center' }, styles.cari]} onPress={() => navigation.navigate('TicketList')}>
-                                    <Text style={{ fontSize: fontPixel(12), fontFamily: 'PlusJakartaSans-Bold', color: 'white', textAlign: 'center' }}>CARI  TIKET</Text>
+                                    <Text style={{ fontSize: fontPixel(12), fontFamily: 'PlusJakartaSans-Bold', color: 'white', textAlign: 'center' }}>CARI TIKET</Text>
                                 </TouchableOpacity>
                             </View>
 

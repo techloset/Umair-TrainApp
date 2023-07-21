@@ -18,14 +18,14 @@ const Large = () => {
             id: '1',
             title: 'Tetap jaga komunikasi selama di kereta',
 
-            tips: <Calling text='Tips' color='#85D3FF' backgroundColor="#E0F3FF" borderRadius={4} paddingHorizontal={pixelSizeHorizontal(8)} paddingVertical={pixelSizeVertical(2)} />,
+            tips: <Calling text='Tips' color='#85D3FF' backgroundColor="#E0F3FF" borderRadius={4} height={heightPixel(18)} width={widthPixel(37)} />,
             hello: <Hello image={require('../../assets/Call.png')} width={widthPixel(100)} height={heightPixel(100)} />
         },
 
         {
             id: '2',
             title: 'Protokol kesehatan di kereta',
-            tips: <Calling text='Update' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} paddingHorizontal={8} paddingVertical={pixelSizeVertical(2)} />,
+            tips: <Calling text='Update' color='#FE9B4B' backgroundColor="#F4781433" borderRadius={4} height={heightPixel(20)} width={widthPixel(53)} />,
             hello: <Hello image={require('../../assets/Hand2.png')} width={widthPixel(100)} height={heightPixel(100)} />
         },
 

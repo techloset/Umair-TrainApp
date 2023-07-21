@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-    SafeAreaView,
+
     View,
     FlatList,
-    ScrollView,
+
     StyleSheet,
-    Text,
+
     StatusBar,
 } from 'react-native';
 import CustomDropDown from './CardList';
