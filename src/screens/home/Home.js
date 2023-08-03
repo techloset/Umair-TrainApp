@@ -26,10 +26,13 @@ const Home = ({ navigation }) => {
                     <View style={styles.first}>
                         <Text style={styles.hett} >Mau pergi ke
                             mana kali ini?</Text>
+                        <Text>
+
+                        </Text>
                         <Image source={Hand} style={{ width: widthPixel(100), height: heightPixel(150), }} />
                     </View>
                     <View style={styles.border}>
-                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(22) }}>
+                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(14) }}>
                             <Text style={{ color: '#2D9CDB', fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(10) }}>Keberangkatan</Text>
                             <Text style={{ color: '#2D9CDB', fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(10) }}>Tujuan</Text>
                         </View>
@@ -47,7 +50,7 @@ const Home = ({ navigation }) => {
 
                             </View>
                             <View style={{ marginHorizontal: pixelSizeHorizontal(16), borderBottomWidth: 1, borderColor: '#F2F2F2' }}>
-                              
+
                             </View>
                         </View>
 
@@ -68,7 +71,7 @@ const Home = ({ navigation }) => {
 
                             </View>
                         </View>
-                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(14) }}>
+                        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(10), }}>
 
                             <View style={{ display: 'flex', gap: 5 }}>
                                 <Text style={{ color: '#2D9CDB', fontSize: fontPixel(10), fontFamily: 'PlusJakartaSans-Bold' }}>Jumlah penumpang</Text>

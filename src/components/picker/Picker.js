@@ -18,9 +18,9 @@ const PickerList = () => {
 
                             onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
                         >
-                            <Picker.Item label="Paspor" value="Paspor" />
-                            <Picker.Item label="Java" value="Java" />
-                            <Picker.Item label="CSS" value="CSS" />
+                            <Picker.Item label="Paspor" value="Paspor" style={{ fontSize: 12 }} />
+                            <Picker.Item label="Java" value="Java" style={{ fontSize: 12 }} />
+                            <Picker.Item label="CSS" value="CSS" style={{ fontSize: 12 }} />
                         </Picker>
                     </View >
                 </Pressable>

@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     img: {
 
         width: widthPixel(16),
-        height: heightPixel(14),
+        height: heightPixel(18),
         marginTop: pixelSizeVertical(55),
 
         marginLeft: pixelSizeHorizontal(35)
@@ -69,5 +69,5 @@ export const styles = StyleSheet.create({
         shadowRadius: 14.86,
         elevation: 18
     },
-    hett: { fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(24), width: widthPixel(164), lineHeight: 32, marginTop: pixelSizeVertical(44), color: '#59597C' }
+    hett: { fontFamily: 'PlusJakartaSans-Bold', fontSize: fontPixel(24), width: widthPixel(164), lineHeight: pixelSizeVertical(32), marginTop: pixelSizeVertical(40), color: '#59597C' }
 })

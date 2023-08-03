@@ -43,7 +43,7 @@ const CardList = () => {
                             <ScrollView style={{ borderTopWidth: 1, borderColor: '#9F9FB9', flex: 1, }}>
                                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: pixelSizeHorizontal(16), marginTop: pixelSizeVertical(16) }}>
 
-                                    <View style={{ gap: 8 }}>
+                                    <View style={{ gap: 7 }}>
                                         <Text style={{ color: '#88879C', fontSize: fontPixel(12), fontFamily: 'PlusJakartaSans-Bold', }}>Jenis Identitas</Text>
                                         <PickerList />
                                     </View>
